@@ -48,8 +48,6 @@ export default function App() {
                 setErrorMessages(result.message)
             }
 
-            // alert(`Latitude : ${latitude} , Longitude : ${longitude}`)
-
         } catch (error: any) {
             setErrorMessages(error.message)
         }
