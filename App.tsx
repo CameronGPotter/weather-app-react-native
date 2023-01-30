@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import * as Location from 'expo-location'
 import React, { useEffect, useState } from 'react'
 
+import writeData from './utils/WriteData';
 import { IWeatherResponseDTO, colors } from './utils/index';
 import WeatherInfo from './components/WeatherInfo';
 import UnitsPicker from './components/UnitsPicker';
@@ -54,7 +55,7 @@ export default function App() {
     }
 
     if (currentWeather) {
-
+        writeData({currentWeather})
         return (
             <View style={styles.container}>
                 <StatusBar style="auto" />
