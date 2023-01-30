@@ -12,6 +12,8 @@ import WeatherDetails from './components/WeatherDetails';
 
 import { WEATHER_API_KEY, BASE_WEATHER_URL } from '@env';
 
+// hi from simon
+
 export default function App() {
 
     const [errorMessages, setErrorMessages] = useState<string | null>(null)
