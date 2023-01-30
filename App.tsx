@@ -18,7 +18,7 @@ export default function App() {
 
     const [errorMessages, setErrorMessages] = useState<string | null>(null)
     const [currentWeather, setCurrentWeather] = useState<IWeatherResponseDTO | null>(null)
-    const [unitsSystem, setUnitsSystem] = useState<string>('metric')
+    const [unitsSystem, setUnitsSystem] = useState<string>('Metric')
 
     useEffect(() => {
         load()
