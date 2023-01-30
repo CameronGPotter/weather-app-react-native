@@ -13,8 +13,8 @@ export default function UnitsPicker({ unitsSystem, setUnitsSystem }: { unitsSyst
 				mode="dropdown"
 				itemStyle={{ fontSize: 12 } as StyleProp<TextStyle>}
 			>
-				<Picker.Item label="°C" value="metric" />
-				<Picker.Item label="°F" value="imperial" />
+				<Picker.Item label="°C" value="Metric" />
+				<Picker.Item label="°F" value="Imperial" />
 			</Picker>
 		</View>
 	)
